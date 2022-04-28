@@ -1,0 +1,100 @@
+{% load static %}
+{% block navbar %}
+    <!-- Header Section Begin -->
+  <div class="menu-mask"></div>
+    <header class="main-header">
+      <meta charset="gb18030">
+      <div class="container">
+        <div class="basic-flex header__top">
+          <div class="logo-wrapper">
+            <a href="/" class="logo">
+              <h1>TOSHKENT24</h1>
+            </a>
+          </div>
+          <div class="currencies basic-flex">
+            <div class="currency"><span>$</span><span>11362.51 </span></div>
+            <div class="currency"><span>P</span><span>147.09</span></div>
+            <div class="currency"><span>E</span><span>12376.05</span></div>
+          </div>
+          <a id="ms-informer-link-76b50af562057c096f2e9cdbf44f373b" class="ms-informer-link"
+            href="https://www.meteoservice.ru/weather/overview/namangan"></a>
+
+
+
+          <div class="header__actions basic-flex">
+            <form method="GET" class="search-form basic-flex" action="/search">
+              <input type="hidden" name="_token" value="gLPg3Rge9aYedtOZE7RFb3jP1xizIzKE69iCWV8N"> <input type="search"
+                name="q" class="search-input">
+              <button type="button" class="btn search-btn"></button>
+
+            </form>
+            <div class="languages">
+              <button type="button" class="btn language__option language__option--uz">Ўзб</button>
+              <ul class="languages__list">
+                <a href="#" type="button" class="btn language__option language__option--active"
+                  data-status="disabled">Рус</a>
+                <a href="#" type="button" class="btn language__option language__option--uz"
+                  data-status="disabled">O'zb</a>
+              </ul>
+            </div>
+            <div class="telegram-join basic-flex">
+              <a href="https://t.me/Khojiakbar_dev"><img src="{% static 'img/tg.png' %}" alt="Telegram">Обуна бўлиш</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-menu"><span class="hamburger"></span></button>
+        <nav class="navbar">
+          <div class="currencies-responsive basic-flex">
+            <div class="currency"><span>$</span><span>11362.51 </span></div>
+            <div class="currency"><span>P</span><span>147.09</span></div>
+            <div class="currency"><span>E</span><span>12376.05</span></div>
+          </div>
+
+          <ul class="navbar__menu basic-flex">
+            <li class="menu__item"><a href="/category/ozbekiston">Ўзбекистон</a></li>
+            <li class="menu__item"><a href="/category/boks">Бокс</a></li>
+            <li class="menu__item"><a href="/category/dunyo">Дунё</a></li>
+            <li class="menu__item"><a href="/category/siyosat">Сиёсат</a></li>
+            <li class="menu__item"><a href="/category/namangan">Наманган</a></li>
+            <li class="menu__item"><a href="/category/shou-biznes">Шоу Бизнес</a></li>
+            <li class="menu__item"><a href="/category/i-tisodiyot">Иқтисодиёт</a></li>
+            <li class="menu__item"><a href="/category/sport">Спорт</a></li>
+            <li class="menu__item"><a href="/category/tehnologiyalar">Технологиялар</a></li>
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="covid-block basic-flex ">
+        <div class="covid-block__title basic-flex">
+          <div class="covid-title__img"></div>
+          <a href="#" class="covid-title__text">Коронавирус COVID-19 Ўзбекистонда</a>
+        </div>
+        <div class="covid-block__stats basic-flex">
+          <div class="stats__item basic-flex">
+            <div class="stats__img"></div>
+            <div class="stats-text-box">
+              <h4>Инфекцияланганлар</h4>
+              <p class="infected">238321</p>
+            </div>
+          </div>
+          <div class="stats__item basic-flex">
+            <div class="stats__img"></div>
+            <div class="stats-text-box">
+              <h4>Соғайганлар</h4>
+              <p class="recovered">236321</p>
+            </div>
+          </div>
+          <div class="stats__item basic-flex">
+            <div class="stats__img"></div>
+            <div class="stats-text-box">
+              <h4>Вафот этганлар</h4>
+              <p class="died">1637</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Section End -->
+{% endblock %}

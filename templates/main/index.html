@@ -1,0 +1,299 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <!-- Posts Section Begin -->
+
+    <section class="posts">
+        <div class="container">
+            <ul class="posts__list basic-flex">
+                <li class="posts__item">
+                    <a href="/post/97">
+                        <img src="{% static 'posts/cqmd1zZqxsZ2HlH3MLnQ.jpg' %}" alt="Image" class="posts__img">
+                        <h2 class="posts__title">Коллежларда сиртқи ва кечки таълим ташкил этилади</h2>
+                        <span class="posts__date"> 11:51 / 22.02.2022 &nbsp<i class="far fa-eye"></i>&nbsp 158</span>
+                    </a>
+                </li>
+                <li class="posts__item">
+                    <a href="/post/96">
+                        <img src="{% static 'posts/J3IGYm9ngXbHEpc4qlLx.jpg' %}" alt="Image" class="posts__img">
+                        <h2 class="posts__title">АҚШ бугун Россияга қарши санкцияларни қабул қилади</h2>
+                        <span class="posts__date"> 11:32 / 22.02.2022 &nbsp<i class="far fa-eye"></i>&nbsp 303</span>
+                    </a>
+                </li>
+                <li class="posts__item">
+                    <a href="/post/95">
+                        <img src="{% static 'posts/kpHnJvBuM0s5VVPrhDeC.jpg' %}" alt="Image" class="posts__img">
+                        <h2 class="posts__title">Қаровсиз қолдирилган автомашина ўғирланди</h2>
+                        <span class="posts__date"> 15:20 / 20.02.2022 &nbsp<i class="far fa-eye"></i>&nbsp 207</span>
+                    </a>
+                </li>
+                <li class="posts__item">
+                    <a href="/post/94">
+                        <img src="{% static 'posts/LpEQhySNlX9dmz96iTvH.jpg' %}" alt="Image" class="posts__img">
+                        <h2 class="posts__title">Билл Гейтс тез орада янги пандемия бошланишидан огоҳлантирди</h2>
+                        <span class="posts__date"> 14:15 / 20.02.2022 &nbsp<i class="far fa-eye"></i>&nbsp 264</span>
+                    </a>
+                </li>
+                <li class="posts__item">
+                    <a href="/post/93">
+                        <img src="{% static 'posts/m9nvRgcnavgbA7k2rYvt.jpg' %}" alt="Image" class="posts__img">
+                        <h2 class="posts__title">Буюк Британия Россиянинг Украинага “босқини”нинг янги муддатини
+                            айтди</h2>
+                        <span class="posts__date"> 14:02 / 20.02.2022 &nbsp<i class="far fa-eye"></i>&nbsp 267</span>
+                    </a>
+                </li>
+                <li class="posts__item">
+                    <a href="/post/92">
+                        <img src="{% static 'posts/Q1NwzloZbWJpko3vX0Eq.jpg' %}" alt="Image" class="posts__img">
+                        <h2 class="posts__title">Уэйн Руни, Серхио Агуэро ва Одил Аҳмедов. 2021 йилда фаолиятини
+                            якунлаган таниқли
+                            футболчилар</h2>
+                        <span class="posts__date"> 13:06 / 20.02.2022 &nbsp<i class="far fa-eye"></i>&nbsp 106</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="notification basic-flex">
+            <div class="notification__text basic-flex">
+                <h3>Янгиликлардан биринчи бўлиб ҳабардор бўлмоқчимисиз? Ҳабарларни сизга тўғридан тўғри юборишимиз учун
+                    обуна
+                    бўлинг! </h3>
+            </div>
+            <a type="button" href="https://t.me/Khojiakbar_dev" class="notification__button btn">
+                Обуна бўлиш! </a>
+        </div>
+    </div>
+    <section class="news">
+        <div class="container">
+            <div class="news__wrapper basic-flex" id="latestPosts">
+                <div class="column-news">
+                    <h2 class="news__title">Сўнгги янгиликлар</h2>
+                    <ul class="news__list basic-flex">
+                        <li class="news__item">
+                            <a href="#" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/cqmd1zZqxsZ2HlH3MLnQ-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Коллежларда сиртқи ва кечки таълим ташкил этилади</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">11:51 / 22.02.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      158</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/J3IGYm9ngXbHEpc4qlLx-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">АҚШ бугун Россияга қарши санкцияларни қабул қилади</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">11:32 / 22.02.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      303</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/kpHnJvBuM0s5VVPrhDeC-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Қаровсиз қолдирилган автомашина ўғирланди</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">15:20 / 20.02.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      207</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/LpEQhySNlX9dmz96iTvH-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Билл Гейтс тез орада янги пандемия бошланишидан
+                                        огоҳлантирди</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">14:15 / 20.02.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      264</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="/post/93" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/m9nvRgcnavgbA7k2rYvt-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Буюк Британия Россиянинг Украинага “босқини”нинг янги
+                                        муддатини айтди</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">14:02 / 20.02.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      267</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="/post/92" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/Q1NwzloZbWJpko3vX0Eq-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Уэйн Руни, Серхио Агуэро ва Одил Аҳмедов. 2021 йилда
+                                        фаолиятини якунлаган
+                                        таниқли футболчилар</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">13:06 / 20.02.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      106</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="/post/91" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/X6rAjSpHos1Am9gQgSxS-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">“Айтаверамиз, қайтаверамиз!” ёхуд анъанавий таълимга ўтиш
+                                        ҳақида талабалар
+                                        нима дейди?</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">12:40 / 04.02.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      236</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="/post/90" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/sW47Uo7CwCYufOSw62K2-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Сўнгги 4 мавсумдан бери топ-5 лигаларда енг кўп пеналти
+                                        тепган жамоалар
+                                        маълум бўлди</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">13:09 / 19.01.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp 68</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="/post/89" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/QdaSpb84oyPFisLCahej-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Франция Ўзбекистонга 100 млн евро қарз беради</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">11:52 / 19.01.2022&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      149</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="/post/88" class="basic-flex news__link">
+                                <div class="news-image-wrapper"><img
+                                        src="{% static 'posts/9gu5J56qPXP5BkQ7tljP-medium.jpg' %}" alt="Bottom Img">
+                                </div>
+                                <div class="news-box basic-flex">
+                                    <h4 class="news__title">Telegram мессенжерида янги функция пайдо бўлди</h4>
+                                    <p class="news__description">
+                                    </p>
+                                    <span class="news__date basic-flex">11:07 / 08.12.2021&nbsp<i
+                                            class="far fa-eye"></i>&nbsp
+                      840</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <a href="?more#latestPosts" class="btn load-more-btn"> Кўпроқ янгиликлар </a>
+                </div>
+
+                <div class="popular-news">
+                    <div class="popular-news-wrapper">
+                        <h4 class="popular-news__title">Энг оммабоп янгиликлар</h4>
+                        <ul class="popular-news__list">
+                            <li class="popular-news__item">
+                                <a href="/post/62">
+                                    <p class="popular-news__description"> МИБ Наманган вилоятида ўзини ёққан аёлнинг 13
+                                        минг доллар пули
+                                        нега ундирилмаганига изоҳ берди </p>
+                                    <span class="popular-news__date">19:16 / 03.10.2020&nbsp<i class="far fa-eye"></i>&nbsp 2452</span>
+                                </a>
+                            </li>
+                            <li class="popular-news__item">
+                                <a href="/post/52">
+                                    <p class="popular-news__description"> Ҳурматли хайдовчилар диққатига </p>
+                                    <span class="popular-news__date">20:51 / 09.06.2020&nbsp<i class="far fa-eye"></i>&nbsp 2336</span>
+                                </a>
+                            </li>
+                            <li class="popular-news__item">
+                                <a href="/post/66">
+                                    <p class="popular-news__description"> “Катта Наманган” каналидан вояга етмаган
+                                        қизнинг жасади
+                                        топилди. Уни сувга келинойиси итариб юборганлиги айтилмоқда </p>
+                                    <span class="popular-news__date">13:24 / 12.04.2021&nbsp<i class="far fa-eye"></i>&nbsp 1656</span>
+                                </a>
+                            </li>
+                            <li class="popular-news__item">
+                                <a href="/post/54">
+                                    <p class="popular-news__description"> Диққат❗️ Бегона рақамга қайтиб қўнғироқ қилиш
+                                        натижасида
+                                        ҳисобингиздан катта миқдордаги маблағ ечиб олиниши мумкин </p>
+                                    <span class="popular-news__date">14:15 / 13.06.2020&nbsp<i class="far fa-eye"></i>&nbsp 1371</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="ads-placeholder"
+                         style="background-image:url(https://islommoliyasi.uz/wp-content/uploads/2020/07/555-2.jpg); background-size: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="apps-block container basic-flex">
+        <div class="apps-block__image"></div>
+        <div class="apps-block__content">
+            <h4>Сўнгги янгиликлардан доим ҳабардор бўлинг!</h4>
+            <p> TOSHKENT24 мобил иловасини ўрнатинг ва барча янгиликлар энди сизнинг чўнтагингизда!</p>
+        </div>
+        <div class="apps-block__links basic-flex">
+            <div class="links__item">
+                <a href="#"><img src="{% static 'img/googleplay.png' %}" alt="googleplay"></a>
+            </div>
+            <div class="links__item">
+                <a href="#"><img src="{% static 'img/appstore.png' %}" alt="googleplay"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Posts Section End -->
+{% endblock %}
+

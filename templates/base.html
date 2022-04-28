@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="o`z">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Toshkent24 — Ўзбекистон бўйлаб сўнгги янгиликлар ">
+    <meta name="keywords" content="Toshkent24, yangiliklar, Uzbekistan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="gLPg3Rge9aYedtOZE7RFb3jP1xizIzKE69iCWV8N">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/all.css' %}">
+</head>
+
+<body>
+    {% include "./layouts/navbar.html" %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include "./layouts/footer.html" %}
+
+     <!-- Script file -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <script class="ms-informer-script"
+    src="https://www.meteoservice.ru/informer/script/76b50af562057c096f2e9cdbf44f373b"></script>
+</body>
