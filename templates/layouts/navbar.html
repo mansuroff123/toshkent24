@@ -12,22 +12,24 @@
             </a>
           </div>
           <div class="currencies basic-flex">
-            <div class="currency"><span>$</span><span>11362.51 </span></div>
-            <div class="currency"><span>P</span><span>147.09</span></div>
-            <div class="currency"><span>E</span><span>12376.05</span></div>
-          </div>
+              {% for i in currency %}
+                  <div class="currency"><span>{{ i.0|safe }}</span><span>{{ i.1 }}</span></div>
+              {% endfor %}
+          </div>&emsp;&emsp;
           <a id="ms-informer-link-76b50af562057c096f2e9cdbf44f373b" class="ms-informer-link"
-            href="https://www.meteoservice.ru/weather/overview/namangan"></a>
+            href="https://www.meteoservice.ru/weather/overview/tashkent"></a>
 
 
 
           <div class="header__actions basic-flex">
-            <form method="GET" class="search-form basic-flex" action="/search">
-              <input type="hidden" name="_token" value="gLPg3Rge9aYedtOZE7RFb3jP1xizIzKE69iCWV8N"> <input type="search"
-                name="q" class="search-input">
+            <form method="GET" class="search-form basic-flex" action="{% url 'news:post_list' %}">
+                {% csrf_token %}
+              <input type="hidden" name="_token" value="gLPg3Rge9aYedtOZE7RFb3jP1xizIzKE69iCWV8N">
+                <input value="{{ request.GET.q }}" type="search" name="q" class="search-input">
               <button type="button" class="btn search-btn"></button>
 
             </form>
+              {% csrf_token %}
             <div class="languages">
               <button type="button" class="btn language__option language__option--uz">Ўзб</button>
               <ul class="languages__list">
@@ -45,21 +47,15 @@
         <button type="button" class="btn btn-menu"><span class="hamburger"></span></button>
         <nav class="navbar">
           <div class="currencies-responsive basic-flex">
-            <div class="currency"><span>$</span><span>11362.51 </span></div>
-            <div class="currency"><span>P</span><span>147.09</span></div>
-            <div class="currency"><span>E</span><span>12376.05</span></div>
+            {% for i in currency %}
+                  <div class="currency"><span>{{ i.0|safe }}</span><span>{{ i.1 }}</span></div>
+              {% endfor %}
           </div>
 
           <ul class="navbar__menu basic-flex">
-            <li class="menu__item"><a href="/category/ozbekiston">Ўзбекистон</a></li>
-            <li class="menu__item"><a href="/category/boks">Бокс</a></li>
-            <li class="menu__item"><a href="/category/dunyo">Дунё</a></li>
-            <li class="menu__item"><a href="/category/siyosat">Сиёсат</a></li>
-            <li class="menu__item"><a href="/category/namangan">Наманган</a></li>
-            <li class="menu__item"><a href="/category/shou-biznes">Шоу Бизнес</a></li>
-            <li class="menu__item"><a href="/category/i-tisodiyot">Иқтисодиёт</a></li>
-            <li class="menu__item"><a href="/category/sport">Спорт</a></li>
-            <li class="menu__item"><a href="/category/tehnologiyalar">Технологиялар</a></li>
+            {% for cat in category %}
+                <li class="menu__item"><a href="?cat={{ cat.id }}">{{ cat.name }}</a></li>
+            {% endfor %}
           </ul>
 
         </nav>
@@ -76,21 +72,21 @@
             <div class="stats__img"></div>
             <div class="stats-text-box">
               <h4>Инфекцияланганлар</h4>
-              <p class="infected">238321</p>
+              <p class="infected"></p>
             </div>
           </div>
           <div class="stats__item basic-flex">
             <div class="stats__img"></div>
             <div class="stats-text-box">
               <h4>Соғайганлар</h4>
-              <p class="recovered">236321</p>
+              <p class="recovered"></p>
             </div>
           </div>
           <div class="stats__item basic-flex">
             <div class="stats__img"></div>
             <div class="stats-text-box">
               <h4>Вафот этганлар</h4>
-              <p class="died">1637</p>
+              <p class="died"></p>
             </div>
           </div>
         </div>

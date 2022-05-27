@@ -1,115 +1,57 @@
 {% extends 'base.html' %}
+{% load hitcount_tags %}
 {% block content %}
     <!-- Post Detail Section Begin -->
     <section class="article">
-      <div class="container">
-        <div class="news__wrapper basic-flex">
-          <div class="article__wrapper">
-            <h2 class="article__title">Коллежларда сиртқи ва кечки таълим ташкил этилади
-            </h2>
-            <span class="article__date basic-flex">11:51 / 22.02.2022 &nbsp&nbsp<i class="far fa-eye"></i>&nbsp
-              163</span>
-            <img height="400px" src="posts/cqmd1zZqxsZ2HlH3MLnQ.jpg" alt="Коллежларда сиртқи ва кечки таълим ташкил этилади
-          ">
-            <p class="">
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              Норматив-ҳуқуқий ҳужжатлар лойиҳалари муҳокамаси порталига &ldquo;Профессионал таълим муассасаларида
-              сиртқи ва кечки таълимни ташкил этиш чора-тадбирлари тўғрисида&rdquo;ги Вазирлар Маҳкамаси қарори лойиҳаси
-              муҳокамага&nbsp;қўйилди.</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              Қарор билан Ўзбекистон Республикасида Таълимнинг халқаро стандарт таснифлагичининг 4 ва 5 даражалари
-              бўйича кадрлар тайёрлашда &ldquo;Ҳаёт давомида таълим олиш&rdquo; принципи асосида коллеж ва техникумларда
-              сиртқи ва кечки таълим шаклини ташкил этиш тартиби белгиланади.</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              Хусусан, ўрта ва ўрта махсус профессионал таълим муассасаларида таълимнинг сиртқи ва кечки шаклларига
-              ўқишга қабул қилиш, ўқитишни ташкил этиш, масофадан туриб ўқитиш элементларидан фойдаланиш, якуний давлат
-              аттестациясини ташкил этиш ҳамда ўқув жараёнларини бошқариш тартиби белгиланган.</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              Коллеж ва техникумларда сиртқи ва кечки таълим шаклидаги ўқув жараёнлари талаб даражасида ташкил этилиши
-              Олий ва ўрта махсус таълим вазирлиги томонидан қатъий назоратга олиш белгиланади.</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              Шу билан бирга, мазкур қарор лойиҳасида ўрта ва ўрта махсус профессионал таълим муассасаларида сиртқи ва
-              кечки таълимни ташкил этиш тартиби тўғрисидаги низомлар тасдиқланмоқда.</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              Лойиҳада қатор таклифлар илгари сурилган. Унга кўра:</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              &bull;&nbsp;&nbsp; &nbsp;ўқув семестри якунигача бўлган муддатда сиртқи таълимда ўқиш мустақил, шу
-              жумладан, масофадан туриб таълим олиш шаклида амалга оширилади;</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              &bull;&nbsp;&nbsp; &nbsp;ўқувчи ҳар бир семестр давомида тасдиқланган режа-жадвал асосида камида бир марта
-              таълим муассасасига ўқув сессиясига чақирилади;</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              &bull;&nbsp;&nbsp; &nbsp;сиртқи ва кечки таълимда масофадан туриб ўқитиш ўқувчиларнинг асосий иш жойидан
-              ажралмаган ҳолда амалга оширилади;</p>
-            <p
-              style="outline: 0px; box-sizing: border-box; color: #000000; margin: 0px; font-size: 18px; line-height: 24px; text-align: justify; padding-bottom: 20px; word-break: keep-all; font-family: MuseoSansCyrl, sans-serif;">
-              &bull;&nbsp;&nbsp; &nbsp;кечки таълимда ўқиш бир ҳафтада 4-5 кундан иборат бўлади.</p>
-            </p>
+        <div class="container">
+            <div class="news__wrapper basic-flex">
+                <div class="article__wrapper">
+                        <h2 class="article__title">
+                            {{ post.title }}
+                        </h2>
+                        <span class="article__date basic-flex">{{ post.create_at|date:'H:i / d.m.Y' }} &nbsp&nbsp<i class="far fa-eye"></i>&nbsp {% get_hit_count for post %}</span>
+                        <img height="400px" src="{{ post.img.url }}" alt="{{ post.title }}">
+                        <p>
+                            {{ post.description|safe }}
+                        </p>
+
+                    <div class="hashtags basic-flex">
 
 
+                    </div>
+                </div>
 
-            <div class="hashtags basic-flex">
-
-
+                <div class="popular-news">
+                    <div class="popular-news-wrapper">
+                        <h4 class="popular-news__title">Энг оммабоп янгиликлар</h4>
+                        <ul class="popular-news__list">
+                            <ul class="popular-news__list">
+                            {% for post in popular_posts %}
+                                <li class="popular-news__item">
+                                    <a href="{% url "news:detail" post.slug %}">
+                                        <p class="popular-news__description">
+                                            {{ post.title }}
+                                        </p>
+                                        <span class="popular-news__date">{{ post.create_at|date:'H:i / d.m.Y' }}&nbsp<i class="far fa-eye"></i>&nbsp {% get_hit_count for post %}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="ads-placeholder"
+                         style="background-image:url(https://islommoliyasi.uz/wp-content/uploads/2020/07/555-2.jpg); background-size: cover;">
+                    </div>
+                </div>
+                <div class="related-news">
+                    <h3 class="related-news__title">Мавзуга оид янгиликлар </h3>
+                    <div class="related-posts basic-flex">
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="popular-news">
-            <div class="popular-news-wrapper">
-              <h4 class="popular-news__title">Энг оммабоп янгиликлар</h4>
-              <ul class="popular-news__list">
-                <li class="popular-news__item">
-                  <a href="/post/62">
-                    <p class="popular-news__description"> МИБ Наманган вилоятида ўзини ёққан аёлнинг 13 минг доллар пули
-                      нега ундирилмаганига изоҳ берди </p>
-                    <span class="popular-news__date">19:16 / 03.10.2020&nbsp<i class="far fa-eye"></i>&nbsp 2453</span>
-                  </a>
-                </li>
-                <li class="popular-news__item">
-                  <a href="/post/52">
-                    <p class="popular-news__description"> Ҳурматли хайдовчилар диққатига </p>
-                    <span class="popular-news__date">20:51 / 09.06.2020&nbsp<i class="far fa-eye"></i>&nbsp 2338</span>
-                  </a>
-                </li>
-                <li class="popular-news__item">
-                  <a href="/post/66">
-                    <p class="popular-news__description"> “Катта Наманган” каналидан вояга етмаган қизнинг жасади
-                      топилди. Уни сувга келинойиси итариб юборганлиги айтилмоқда </p>
-                    <span class="popular-news__date">13:24 / 12.04.2021&nbsp<i class="far fa-eye"></i>&nbsp 1660</span>
-                  </a>
-                </li>
-                <li class="popular-news__item">
-                  <a href="/post/54">
-                    <p class="popular-news__description"> Диққат❗️ Бегона рақамга қайтиб қўнғироқ қилиш натижасида
-                      ҳисобингиздан катта миқдордаги маблағ ечиб олиниши мумкин </p>
-                    <span class="popular-news__date">14:15 / 13.06.2020&nbsp<i class="far fa-eye"></i>&nbsp 1373</span>
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-            <div class="ads-placeholder"
-              style="background-image:url(https://islommoliyasi.uz/wp-content/uploads/2020/07/555-2.jpg); background-size: cover;">
-            </div>
-          </div>
-          <div class="related-news">
-            <h3 class="related-news__title">Мавзуга оид янгиликлар </h3>
-            <div class="related-posts basic-flex">
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-  <!-- Post Detail Section Begin -->
+    <!-- Post Detail Section Begin -->
 
 {% endblock %}

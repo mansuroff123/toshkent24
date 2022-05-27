@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
     <!-- Contact Section Begin -->
     <section class="contact-details">
@@ -6,23 +7,24 @@
         <div class="contact-details__wrapper basic-flex">
           <div class="form__wrapper">
             <h3 class="form__wrapper-title">Мурожаат йўллаш </h3>
-            <form method="POST" action="/contact" enctype="multipart/form-data">
-              <input type="hidden" name="_token" value="gLPg3Rge9aYedtOZE7RFb3jP1xizIzKE69iCWV8N">
+            <form method="POST" action="{% url 'contacts:contact' %}">
+                {% csrf_token %}
+{#              <input type="hidden" name="_token" value="gLPg3Rge9aYedtOZE7RFb3jP1xizIzKE69iCWV8N">#}
               <div class="form__top">
                 <label><input type="text" name="name" required placeholder="Исм" value=""></label>
                 <label><input type="email" name="email" placeholder="Электрон почта" value=""></label>
-                <label><input type="text" required name="phone" placeholder="Телефон рақам" value=""></label>
-                <label><input type="text" name="theme" placeholder="Мавзу" value=""></label>
+                <label><input type="text" required name="number" placeholder="Телефон рақам" value=""></label>
+                <label><input type="text" name="title" placeholder="Мавзу" value=""></label>
                 <textarea required class="contact-tetxarea" name="text" placeholder="Матн"></textarea>
               </div>
               <div class="form__bottom">
-                <input type="file" name="file" id="file" class="inputfile">
-                <label for="file" class="basic-flex">Файл бириктириш</label>
-                <label class="basic-flex verification-code-wrapper">
-                  <input type="text" placeholder="Код" required name="input_kod">
-                  <input type="hidden" value="4k7Za" name="kod">
-                  <span class="verification-code">4 k 7 Z a</span>
-                </label>
+{#                <input type="file" name="file" id="file" class="inputfile">#}
+{#                <label for="file" class="basic-flex">Файл бириктириш</label>#}
+{#                <label class="basic-flex verification-code-wrapper">#}
+{#                  <input type="text" placeholder="Код" required name="input_kod">#}
+{#                  <input type="hidden" value="4k7Za" name="kod">#}
+{#                  <span class="verification-code">4 k 7 Z a</span>#}
+{#                </label>#}
                 <button type="submit" class="btn send-btn">Юбориш</button>
               </div>
 
@@ -49,8 +51,8 @@
             <div class="card__item basic-flex">
               <span card__item-title> Мобил илова </span>
               <div class="card__apps-wrapper basic-flex">
-                <a href="#"><img src="img/googleplay-wh.png" alt="GooglePlay"></a>
-                <a href="#"><img src="img/appstore-white.png" alt="AppStore"></a>
+                <a href="#"><img src="{% static 'img/googleplay-wh.png' %}" alt="GooglePlay"></a>
+                <a href="#"><img src="{% static 'img/appstore-white.png' %}" alt="AppStore"></a>
               </div>
             </div>
 

@@ -1281,10 +1281,10 @@ a {
     margin-bottom: 15px;
 }
 
-.news__description {
+.news__description{
     margin: 0;
     font-size: 15px;
-    color: #434343;
+    color: #000 ;
 }
 
 .news__date {
