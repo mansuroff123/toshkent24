@@ -104,7 +104,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = BASE_DIR / 'assets',
 
@@ -125,3 +125,4 @@ CKEDITOR_CONFIGS = {
 }
 
 HITCOUNT_HITS_PER_IP_LIMIT = 0
+
