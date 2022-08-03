@@ -366,6 +366,11 @@ a {
     margin-bottom: 25px;
 }
 
+.logo {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
 .logo h1 {
     background: #FFFFFF;
     box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
@@ -1276,10 +1281,10 @@ a {
     margin-bottom: 15px;
 }
 
-.news__description {
+.news__description{
     margin: 0;
     font-size: 15px;
-    color: #434343;
+    color: #000 ;
 }
 
 .news__date {
